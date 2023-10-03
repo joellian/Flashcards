@@ -1,9 +1,11 @@
 import React from 'react';
 
-const NextButton = ({ handleNext }) => {
-    return (
-        <button onClick={handleNext}>Next</button>
-    );
+const NextButton = ({ text, onClick }) => {
+  return (
+    <button className="NextButton" onClick={onClick}>
+      {text}
+    </button>
+  );
 };
 
 export default NextButton;
